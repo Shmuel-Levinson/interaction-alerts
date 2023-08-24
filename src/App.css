@@ -1,0 +1,144 @@
+
+
+.App {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.drug-search-form {
+    width: 600px;
+}
+
+.search-drugs-list {
+    width: 600px;
+    position: absolute;
+    background: #ffffff;
+    z-index: 10;
+    border: 1px solid gray;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-text-input {
+    padding: 10px;
+    outline: none;
+    width: 90%
+
+}
+
+.search-item {
+    text-align: start;
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+.search-item:hover {
+    background: #e3e3e3;
+}
+
+.prescription-table {
+
+    display: flex;
+    flex-direction: column;
+    border: darkgrey 1px solid;
+    width: 600px;
+}
+
+.prescription-table-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.prescription-table-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+.prescription-table-item-name {
+
+}
+
+.prescription-table-item-form {
+    color: gray;
+}
+
+.prescription-table-item-name-and-form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 5px;
+}
+
+.prescription-table-item-calendar {
+
+}
+
+.date-picker-input {
+    cursor: pointer;
+    border: 1px solid gray;
+    font-size: small;
+    padding: 10px;
+}
+
+.icon-img-container {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.add-drug-btn {
+    background: dodgerblue;
+    color: white;
+    outline: none;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    margin-left: auto;
+}
+
+.interaction-alert-container {
+    display: flex;
+    width: 600px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 10px
+}
+
+.interaction-alert-description {
+    padding: 20px;
+}
+
+.interaction-alert-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.normal-severity-interaction-alert {
+    border-color: #007dfc;
+    background: #e3eeff;
+    color: #007dfc;
+}
+
+.high-severity-interaction-alert {
+    border-color: #9f1414;
+    background: #ffe5e5;
+    color: #9f1414;
+}
