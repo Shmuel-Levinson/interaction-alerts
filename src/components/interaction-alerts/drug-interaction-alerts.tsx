@@ -21,4 +21,4 @@ export function DrugInteractionAlerts(props: {
             }
         </div>
     );
-};
+}

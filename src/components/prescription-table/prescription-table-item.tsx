@@ -28,8 +28,8 @@ export function PrescriptionTableItem(props: {
                 <PrescriptionDatePicker onChangeCallback={(date:Date)=>{props.handleDateChange(date)}} prescriptionDate={props.drug.date}/>
             </div>
             <div onClick={() => props.removeItem()}>
-                <img className={'icon-img-container'} src={closeCircle}/>
+                <img className={'icon-img-container'} src={closeCircle} alt={''}/>
             </div>
         </div>
     );
-};
+}

@@ -2,9 +2,6 @@ import React, {forwardRef} from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-// CSS Modules, react-datepicker-cssmodules.css
-
-
 export const PrescriptionDatePicker = (props: { onChangeCallback: Function, prescriptionDate?: Date}) => {
     // @ts-ignore
     const CustomInput = forwardRef(({value, onClick}, ref) => (
@@ -23,4 +20,3 @@ export const PrescriptionDatePicker = (props: { onChangeCallback: Function, pres
         />
     );
 };
-;

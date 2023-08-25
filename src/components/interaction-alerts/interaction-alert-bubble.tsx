@@ -9,9 +9,9 @@ export function InteractionAlertBubble(props: { description: string, severity: s
     return (
         <div className={`interaction-alert-container ${severityClass}`}>
             <div className={'interaction-alert-icon-container'}>
-                <img src={alertIcon} className={'icon-img-container'}/>
+                <img src={alertIcon} className={'icon-img-container'} alt={''}/>
             </div>
             <div className={'interaction-alert-description'}>{props.description}</div>
         </div>
     );
-};
+}

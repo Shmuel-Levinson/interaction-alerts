@@ -27,4 +27,4 @@ export function PrescriptionTable(props: {
             }
         </div>
     );
-};
+}

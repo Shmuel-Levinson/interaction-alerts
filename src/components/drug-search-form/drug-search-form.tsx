@@ -4,7 +4,6 @@ import {SearchDrugsList} from "./search-drugs-list";
 import {searchDrugs} from "../../api";
 import {parseDrugsData} from "../../data-parsers";
 import {Drug} from "../../types";
-import debounce from 'lodash.debounce';
 
 export function DrugSearchForm(props: { addDrugToPrescriptionTable: Function }) {
     const [drugSearchItems, setDrugSearchItems] = useState<Drug[]>([])
@@ -28,7 +27,7 @@ export function DrugSearchForm(props: { addDrugToPrescriptionTable: Function }) 
         } else {
             setDrugSearchItems([])
         }
-    }, [debouncedSearchText]);
+    }, [debouncedSearchText, selectedDrug]);
 
     function selectDrug(drug: Drug) {
         setSelectedDrug(drug)
@@ -73,4 +72,4 @@ export function DrugSearchForm(props: { addDrugToPrescriptionTable: Function }) 
             }
         </div>
     );
-};
+}

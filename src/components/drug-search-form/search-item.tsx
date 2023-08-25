@@ -6,4 +6,4 @@ export function SearchItem(props: { onClick: Function, name: string }) {
       {props.name}
   </div>
  );
-};
+}

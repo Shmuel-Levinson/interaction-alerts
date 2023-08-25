@@ -18,4 +18,4 @@ export function SearchDrugsList(props: { drugs: Drug[], selectDrug: Function }) 
             </div>}
         </div>
     );
-};
+}
