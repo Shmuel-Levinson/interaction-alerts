@@ -18,6 +18,7 @@ export function PrescriptionTable(props: {
                 <div className={'prescription-table'}>
                     {selectedDrugs.map((drug: Drug, index: number) =>
                         <PrescriptionTableItem
+                            key={`prescription-table-item-${index}`}
                             drug={drug}
                             removeItem={() => props.removeItem(index)}
                             handleDateChange={(date: Date) => props.updatePrescriptionDate(index, date)}/>

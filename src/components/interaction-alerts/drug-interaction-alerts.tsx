@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {InteractionAlert} from "../types";
-import {InteractionAlertBubble} from "./interaction-alerts/interaction-alert-bubble";
+import {InteractionAlert} from "../../types";
+import {InteractionAlertBubble} from "./interaction-alert-bubble";
 
 export function DrugInteractionAlerts(props: {
     interactionAlerts: InteractionAlert[]
@@ -8,8 +8,10 @@ export function DrugInteractionAlerts(props: {
 }) {
     return (
         <div>
-            {props.interactionAlerts.length > 0 && props.interactionAlerts.map(alert =>
+            {props.interactionAlerts.length > 0 &&
+                props.interactionAlerts.map((alert, index: number) =>
                 <InteractionAlertBubble
+                    key={`interaction-alert-bubble-${index}`}
                     description={alert.description}
                     severity={alert.severity}
                 />

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import {DrugSearchForm} from "./components/drug-search-form/drug-search-form";
-import {DrugInteractionAlerts} from "./components/drug-interaction-alerts";
+import {DrugInteractionAlerts} from "./components/interaction-alerts/drug-interaction-alerts";
 import {Drug, InteractionAlert} from "./types";
 import {PrescriptionTable} from "./components/prescription-table/prescription-table";
 import {getInteractionAlerts} from "./api";
